@@ -189,7 +189,7 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.Flags().StringVar(&metricsAddr, "metrics-addr", ":8080", "The address the metric endpoint binds to.")
+	rootCmd.Flags().StringVar(&metricsAddr, "metrics-addr", ":9090", "The address the metric endpoint binds to.")
 	rootCmd.Flags().StringVar(&controllerClass, "controller-class", "default", "the controller is instantiated with a specific controller name and filters ES based on this property")
 	rootCmd.Flags().BoolVar(&enableLeaderElection, "enable-leader-election", false,
 		"Enable leader election for controller manager. "+
