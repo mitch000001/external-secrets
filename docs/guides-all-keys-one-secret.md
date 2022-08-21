@@ -10,6 +10,9 @@ Then create a secret in Google Cloud Secret Manager that contains a JSON string 
 
 Let's call this secret all-keys-example-secret on Google Cloud.
 
+## Caveats
+
+In order to use this method the secret always needs to be well formatted JSON. You have to take care that this is the case, the operator will otherwise throw an error.
 
 ### Creating dataFrom external secret
 
